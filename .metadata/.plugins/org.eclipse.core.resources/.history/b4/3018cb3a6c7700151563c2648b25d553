@@ -1,0 +1,26 @@
+
+public class Example {
+	public static void main(String[] args) {
+		
+		
+		
+		int total = 0; 
+		int counter = 0;
+		int[] numList = new int[100];
+		numList[0] = 0; 
+		
+		//for (int counter = 0; counter < numList.length; counter++) {
+			//numList[counter] = counter;
+			
+		//}
+		for (int counter = 0; counter < numList.length; counter++)
+		{
+			total = total + counter;				
+			
+		}
+			System.out.println("The Array total is " + total);	
+		
+		
+		
+	}
+}

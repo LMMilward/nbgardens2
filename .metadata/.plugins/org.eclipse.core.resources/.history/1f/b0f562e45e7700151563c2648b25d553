@@ -1,0 +1,15 @@
+public class CustomerID 
+{
+	int CustomerID;
+	int dob;
+	String address;	
+	Boolean porousyes;
+	Boolean porousno;
+	double payment;
+	
+	
+	
+	
+	
+	
+}

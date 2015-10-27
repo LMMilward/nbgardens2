@@ -1,0 +1,18 @@
+
+public class NBGardens
+{
+	public static void main(String args[])
+	{
+		
+		CustomerOrder order1 = new CustomerOrder();
+		order1.setOrderID(1);
+		System.out.println(order1.orderID);
+		order1.setOrderStatus("complete");
+	
+		int order1ID = order1.getOrderID();
+		
+	}
+	
+}
+
+

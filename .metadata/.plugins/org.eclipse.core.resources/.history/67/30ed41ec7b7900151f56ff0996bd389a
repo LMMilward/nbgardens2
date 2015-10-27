@@ -1,0 +1,44 @@
+
+	
+			import java.util.ArrayList;
+import java.util.Scanner;	
+	
+
+public class ArrayListExample 
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner input = new Scanner(System.in);	
+		ArrayList<String> list = new ArrayList<String>();
+		
+		
+	//********************************* ARRAY LIST ****************************************
+		
+		list.add("Lee");
+		list.add("Nick");
+		list.add("Matt");
+		list.add("James");
+	
+		System.out.println("Currently the array list holds the following : " + list);
+
+		
+	//****************************** ADD TO ARRAY *****************************************
+		
+		
+		list.add(0, "Ed");
+		list.add(1, "Luke");
+		
+		
+		System.out.println("Now the array holds : " + list);
+		
+		
+		
+		//*****************************DELETING AN ITEM ************************************
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,24 @@
+
+	
+public class MethodsParameters 
+
+	//import needs to be outside of the public/private class
+
+
+{
+	//how to use methods with parameters
+	
+		//line below imports the scanner
+		
+		//line below, in between brackets is the argument - 
+		
+		
+		public static void main(String args[])
+		{
+
+		} 
+		
+
+}
+
+

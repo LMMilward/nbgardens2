@@ -1,0 +1,11 @@
+
+public class StockWarehouse 
+{
+	int ProductID;
+	int Quantity;
+	int SupplierID;
+	
+	
+	
+	
+}

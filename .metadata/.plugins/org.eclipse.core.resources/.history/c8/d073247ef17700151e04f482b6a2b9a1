@@ -1,0 +1,9 @@
+
+public class tunna 
+{
+	public void simpleMess(String name)
+	{
+		System.out.println("Hello" + name);
+	}
+	
+}

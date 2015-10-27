@@ -1,0 +1,85 @@
+// which employee is on what order
+//check order status
+//porous ware or not
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CustomerOrder 
+{	
+	public int orderID;
+	String orders;
+	int productID;
+	public String orderStatus;
+	
+	public CustomerOrder(int orderID, String orders, int productID, String orderStatus)
+	{
+		this.orderID = orderID;
+		this.orders = orders;
+		this.productID = productID;
+		this.orderStatus = orderStatus;
+	}
+	//private ArrayList<OrderLine> orderLines = new ArrayList<OrderLine>();
+
+
+	public int getorderID()
+	{
+		return orderID;
+	}
+	public void setorderID(int orderID) 
+	{
+		this.orderID = orderID;
+	}
+//	public ArrayList<OrderLine> getOrderLines() 
+//	{
+//		return orderLines;
+//	}
+//	public void setOrderLines(ArrayList<OrderLine> orderLines) 
+//	{
+//		this.orderLines = orderLines;
+//	}
+		public String getorderStatus() 
+	{
+		return orderStatus;
+	}
+	public void setOrderStatus(String orderstatus)
+	{
+		this.orderStatus = orderstatus;
+	}
+	public void printOrders()
+	{
+		System.out.println(orders);
+	}
+	public String getorders()
+	{
+		return orders;
+	}
+	public void setOrders(String orders)
+	{
+		this.orders = orders;
+	}
+	public int getproductID()
+	{
+		return productID;
+	}
+	public void setproductID()
+	{
+		this.productID = productID;
+	}
+		/*setters and getters
+	public void setOrderStatus(String status) {
+		if (status != "done" || status != "not done") {
+			status = "not done";
+			System.out.println("status needs to be done or not done");
+		}
+		else orderStatus = status;
+	}
+	*/
+	@Override
+	public String toString() 
+	{
+		return (this.getorderID()+"\t\t"+this.getorders()+"\t\t"+ this.getproductID()+"\t\t\t"+this.getorderStatus());
+	}
+}
+
+	

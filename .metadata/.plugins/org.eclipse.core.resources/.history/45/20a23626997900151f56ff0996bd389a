@@ -1,0 +1,17 @@
+
+public class OrderLine 
+{
+	int CustomerOrderID;
+	int ProductID;
+	int Quantity; 
+	static String printOrders;
+	
+	private OrderLine(String printOrdersList) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void printOrdersList()
+	{
+		System.out.println(printOrders);
+	}
+}

@@ -1,0 +1,36 @@
+	//import needs to be outside of the public/private class
+		import java.util.Scanner;
+
+public class LeaningJava 
+{
+		//how to use methods with parameters
+		{
+			//line below imports the scanner
+			
+			//line below, in between brackets is the argument - 
+			
+			
+			public static void main(String[] args)
+			{
+				Scanner input = new Scanner(System.in);
+				tuna tunaObject = new tuna ();
+				
+				
+				System.out.println("Enter your name here: ");
+				
+				
+				//line below takes the user input and stores it as a variable in name
+				String name = input.nextLine();
+				
+				tunaObject.simpleMessage(name);
+			} 
+		}
+		
+		
+		
+		
+		
+		
+		
+	
+}

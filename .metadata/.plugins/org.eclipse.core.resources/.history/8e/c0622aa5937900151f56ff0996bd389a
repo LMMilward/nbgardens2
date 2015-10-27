@@ -1,0 +1,22 @@
+
+
+public class StockWarehouse 
+{
+	int ProductID;
+	int Quantity;
+	int SupplierID;
+	
+	public void stockAdd(String gnome)
+	{
+		System.out.println("Would you like to add %s ?", gnome);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

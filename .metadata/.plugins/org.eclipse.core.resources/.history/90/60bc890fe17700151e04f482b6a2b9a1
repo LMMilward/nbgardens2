@@ -1,0 +1,19 @@
+
+public class WhileLoop 
+{
+	// while loop example - counter declared at top
+	
+	while (counter < 10)
+	{
+		System.out.println(counter);
+		counter ++;
+	}
+	
+	//to link the class called tuna, this is how you call another class
+	{
+		//object means to use something from tuna class
+		tuna tunaObject = new tuna();
+		tunaObject.simpleMessage(); //simpleMessage is the Method name in the tuna class		
+				
+	}
+}

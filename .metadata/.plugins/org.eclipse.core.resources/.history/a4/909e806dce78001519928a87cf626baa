@@ -1,0 +1,13 @@
+	import java.util.Scanner;																							//import needs to be outside of the public/private class
+	import java.util.Random; 							//this is used to generate random numbers
+
+
+public class ArrayLowNumber 
+{
+
+
+
+
+
+
+}

@@ -1,0 +1,52 @@
+	
+			import java.util.Scanner;	
+	
+	
+public class Main 
+{
+	
+	public static void main(String[] args)
+	{
+	
+			Scanner input = new Scanner(System.in);		
+		
+	int numbers[] = {20,22,24,26,28,30,32,34,36,38,40};
+	int num = 0;
+	int no = 0; 
+	int found = 0;
+	
+	
+	{ //**************** PRINTING THE ARRAY ONTO THE CONSOLE **********************
+		for (int i = 0; i <numbers.length; i ++)
+		{
+			System.out.println("Location " + num + " stores the number "  + numbers[i]);		//this prints out each array that is stored
+			num++;
+		}
+	}
+	
+	 //********************* SEARCHING A NUMBER FROM ARRAY *******************************
+	System.out.println("What number would you like to search?/n");
+	{
+	int rhif = input.nextInt();
+	
+		for(int i = 0; i < numbers.length; i++)
+		{
+				if(numbers[i] == rhif)
+					{
+						found = numbers[i];
+					}
+				else 
+					{
+						System.out.println("This number " + rhif + "does not exist");
+					}
+				System.out.println("Number " + rhif + " is located at " + found);
+		}
+	
+	
+
+	}
+
+}
+	
+	
+}

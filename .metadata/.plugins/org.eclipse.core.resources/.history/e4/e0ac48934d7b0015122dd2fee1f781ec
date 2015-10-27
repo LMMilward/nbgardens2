@@ -1,0 +1,69 @@
+//item location
+//remove item from stock to save for delivery
+//delivery update
+//porous ware minimum stock
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StockWarehouse 
+{
+	int productID;
+	String productName;
+	int quantity;
+	int supplierID;
+
+	
+	public StockWarehouse(int productID, String productName, int quantity, int supplierID) 
+	{
+		this.productID = productID;
+		this.productName = productName;
+		this.quantity = quantity;
+		this.supplierID = supplierID;
+	}
+
+	public int getproductID()
+	{
+		return productID;
+	}
+	public void setproductID(int productID)
+	{
+		this.productID = productID;
+	}
+	public String getproductName()
+	{
+		return productName;
+	}
+	public void setproductName(String productName)
+	{
+		this.productName = productName;
+	}
+	public int quantity()
+	{
+		return quantity;
+	}
+	public void getquantity(int quantity)
+	{
+		this.quantity = quantity;
+	}
+	public int supplierID()
+	{
+		return supplierID;
+	}
+	public void supplierID(int supplierID)
+	{
+		this.supplierID = supplierID;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return (this.getproductID()+"\t" + this.productName()+"\t"+ this.getquantity()+"\t" + this.supplierID());
+	}
+	{
+	this.getproductID = productID;
+	this.getproductName = productName;
+	this.getquantity = quantity;
+	this.supplierID = supplierID;
+	}
+}

@@ -1,0 +1,15 @@
+
+public class cod 
+{
+
+		public void simpleMess(String name)
+		{
+			System.out.println("Hello, " + name + "Are you good or bad today?");
+		
+		}
+		public void simpleHow(String name)
+		{
+			System.out.println~("How are you " + name + "today?");
+				
+		}
+}

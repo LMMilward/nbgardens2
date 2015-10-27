@@ -1,0 +1,12 @@
+
+public class CustomerOrder 
+{	
+	int CustomerID;
+	int OrderID;
+	int ProductID;
+	String OrderStatus;
+	
+
+
+}
+	

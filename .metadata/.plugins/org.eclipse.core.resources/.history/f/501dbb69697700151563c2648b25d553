@@ -1,0 +1,8 @@
+
+public class Example {
+	public static void main(String[] args) {
+		int[] someNumbers = {12, 1, 5};
+		
+		System.out.println(someNumbers[0]);
+	}
+}

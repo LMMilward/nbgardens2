@@ -1,0 +1,32 @@
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//This must be outside the main
+					public static void display(double x[][])
+					{
+						for (int row = 0; row < x.length; row++)
+							{
+									for(int column = 0; column < x[row].length; column++)
+										{
+											System.out.print(x[row][column]);
+											System.out.print("\t");
+										}
+								//System.println();
+							}
+					}
+	

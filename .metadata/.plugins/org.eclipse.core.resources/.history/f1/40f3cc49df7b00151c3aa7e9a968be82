@@ -1,0 +1,59 @@
+
+
+
+public class OrderLine 
+{
+	int customerOrderID;
+	int productID;
+	int quantity; 
+	int porousWare;
+	
+	public OrderLine(int customerOrderID, int productID, int quantity, int porousWare)
+	{
+		this.customerOrderID = customerOrderID;
+		this.productID = productID;
+		this.quantity = quantity;
+		this.porousWare = porousWare;
+	}
+	public int getcustomerOrderID()
+	{
+		return customerOrderID;
+	}
+	public void setcustomerOrderID(int customerOrderID)
+	{
+		this.customerOrderID = customerOrderID;
+	}
+	public int getproductID()
+	{
+		return productID;
+	}
+	public void setproductID(int productID)
+	{
+		this.productID = productID;
+	}
+	public int getquantity()
+	{
+		return quantity;
+	}
+	public void setquantity(int quantity)
+	{
+		this.quantity = quantity;
+	}
+	public int getporousWare()
+	{
+		return porousWare;
+	}
+	public void setporousWare(int porousWare)
+	{
+		this.porousWare = porousWare;
+	}
+	@Override
+	public String toString()
+	{
+		return (this.getcustomerOrderID()+"\t" + this.getproductID() + "\t" + this.getquantity() + "\t"+ this.getporousWare()+"\t");
+	}
+//	public String toString1()
+//	{
+//		return (this.getproductID()+"\t"+this.getporousWare()+"\t");
+//	}
+}

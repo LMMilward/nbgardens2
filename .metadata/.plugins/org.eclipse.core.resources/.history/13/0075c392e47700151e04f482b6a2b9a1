@@ -1,0 +1,12 @@
+
+public class ManyMethodsandInstances 
+{
+	//private means no where can use it except this class
+	private String dogName;
+	//line below sets the name of whatever is put in 
+	public void setName(String name) //two variables name and girlName
+	{
+		
+	}
+	
+}

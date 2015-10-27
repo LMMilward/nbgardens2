@@ -1,0 +1,8 @@
+//constructor - initilise variables as soon as you create an object
+public class pear
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

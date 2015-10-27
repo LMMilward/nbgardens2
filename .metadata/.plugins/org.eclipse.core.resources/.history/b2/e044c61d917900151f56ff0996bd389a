@@ -1,0 +1,117 @@
+	
+		//*********************THIS IS FOR POPUPS*************************************
+	
+		import javax.swing.JOptionPane;
+		
+		//********************THIS IS FOR INPUTITNG USER AND ARRAY************************
+
+
+		import java.util.ArrayList;
+import java.util.Scanner;	
+		
+	public class NBGardens
+{	
+		//************************** THE START OF THE MAIN **************************************
+		
+	public static void main(String args[])
+		{
+		//************************* SETTING A NEW SCANNER AND NEW ARRAY LIST ********************
+		
+			Scanner input = new Scanner(System.in);	
+			ArrayList<String> gnomeList = new ArrayList<String>();			
+			
+		//************************* CASES WILL ALLOW USER TO MAKE A DECISION ********************
+						
+	
+			System.out.println("What would you like to do? \n 1 - Orders \n 2 - Warehouse \n ");
+			
+			int choice = input.nextInt();
+			
+		
+			switch (choice)
+			{
+				
+					
+		//********************************** ARRAY LIST ******************************************************
+				case 1:
+						System.out.println("\nWhat would you like to do?");
+						
+						int choice1 = input.nextInt();
+						System.out.println("\n 1 - Check Orders \n 2 - Update Order \n 3 - Orders that require PorousWare \n ");
+						
+						switch (choice1)
+						{
+							
+							case 1: 
+									System.out.println("You have selected Check Orders \n \tHow many products do you want to add into the database?");
+									
+									int itemsAdd = input.nextInt();
+									
+									for(int i = 0; i < itemsAdd; i++)
+										{
+											String gnome = input.next();
+											int productNumber = 0;		
+											gnomeList.add(productNumber, gnome);
+											productNumber = productNumber ++;
+											System.out.println(gnome + " has been added to the database!");
+										
+											System.out.print(gnomeList);
+
+										}
+									
+
+									
+									
+								
+						
+							break;
+							
+							case 2:
+									System.out.println("You have selected Update Order");
+									
+									
+							break;
+							
+							case 3:
+									System.out.println("You have selected PorousWare");
+									
+									
+							break;
+							
+							default:
+								
+							break;
+
+						}
+				break;
+				
+		//********************************* END OF CASE 1 *****************************************************	
+				
+				case 2: 
+						System.out.println("\n Would you like to print an order?");
+				
+				
+					
+				
+				break;
+				
+		//********************************* END OF CASE 2 ******************************************************
+				
+				default:
+					
+				break;
+				
+		//********************************* END OF DEFAULT CASE *************************************************
+			}
+	}
+}
+	//********************************************** THE END ****************************************************
+		
+	/*	CustomerOrder order1 = new CustomerOrder();
+		order1.setOrderID(1);
+		System.out.println(order1.getOrderID());
+		order1.setOrderStatus("complete");
+	
+		//error due to order1ID being set and not used
+		int order1ID = order1.getOrderID();
+		*/

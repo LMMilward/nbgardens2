@@ -1,0 +1,31 @@
+//item location
+//remove item from stock to save for delivery
+//delivery update
+//porous ware minimum stock
+
+
+public class StockWarehouse 
+{
+	int ProductID;
+	int Quantity;
+	int SupplierID;
+	
+	public StockWarehouse(int i, String string, int j, String string2) 
+	{
+		
+	}
+
+	public void stockAdd(String gnome)
+	{
+		System.out.println("Would you like to add %s ?", gnome);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

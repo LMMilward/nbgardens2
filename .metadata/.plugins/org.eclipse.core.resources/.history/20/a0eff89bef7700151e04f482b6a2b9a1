@@ -1,0 +1,9 @@
+
+public class Cat 
+{
+	private String catName;
+	
+	
+	public void setName(String name)
+	//void means nothing is returned
+}

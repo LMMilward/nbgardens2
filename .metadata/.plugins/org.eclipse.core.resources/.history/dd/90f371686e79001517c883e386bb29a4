@@ -1,0 +1,128 @@
+import java.util.List;
+
+//http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-092-introduction-to-programming-in-java-january-iap-2010/assignments/MIT6_092IAP10_assn04.pdf
+//https://www.youtube.com/watch?v=XYcz9QSprY4
+//http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-092-introduction-to-programming-in-java-january-iap-2010/assignments/
+//https://www.youtube.com/watch?v=l0N6WvIVoUI&list=PLFE2CE09D83EE3E28&index=42
+
+
+public class Library 
+{
+		
+		String address;
+		static String openingHours;  // static means to get hold without referring to object
+		Book[] arrBooks;
+	
+		public Library(String address)
+		{
+			this.address = address;
+			openingHours = "9AM to 5PM";
+		}
+		public void printAddress() //void because it's not returning anything
+		{
+			System.out.println(address);
+		}
+		
+		public void borrowBook(String bookTitle) // void because it's not returning anything ----- Declare string because bookTitle will be called
+		{
+			for (int i = 0; i< arrBooks.length; i++)	// this searches the array, starting from location 0
+			{
+				if (arrBooks[i].getTitle().equals(bookTitle))   //this checks that the book title is in the array ---- to compare two string use '.equals'
+				{
+					if (arrBooks[i].isBorrowed() == false)		//this checks the title and checks to see if the book is borrowed ----- checks in class Book and returns false if it is avaliable
+					{
+						arrBooks[i].borrowed(); 			//this checks out the book
+					}
+					else 
+					{ 
+						System.out.println("Book is unavalable");
+					}
+				}
+				else 
+				{
+					System.out.println("Book does not exist");
+				}
+			}
+		}
+		
+		
+		public static void printOpeningHours() 
+		{
+			System.out.println(openingHours);
+		}
+		
+		public void addBook(Book book) 
+		{
+			Book[] newArrBooks = new Book[arrBooks.length + 1]; // this makes a new array called new ArrBooks ---- it uses the previous array and adds 1 size 
+			
+			for (int i = 0; i < arrBooks.length; i++)				//this copies the books from array to new array
+			{
+				newArrBooks[i] = arrBooks[i];			//this gives the arrBook[i] to  the new array
+			}
+				newArrBooks[arrBooks.length + 1] = book; 	//this adds in the new book into the new array
+				arrBooks = newArrBooks;
+		}
+		
+		
+		public void printAvailableBooks()
+		{
+			for(int i = 0; i <arrBooks.length; i++)
+			{
+				System.out.println(arrBooks[i].getTitle());
+			}
+		}
+		
+		
+
+		//******************** THIS IS WHERE secondLibrary WILL BE ****************************************//
+	
+	
+	
+	
+	
+	
+	
+	// Add the missing implementation to this class
+	public static void main(String[] args) 
+		{
+																							// Create two libraries
+			 Library firstLibrary = new Library("10 Main St.");
+			 Library secondLibrary = new Library("228 Liberty St.");
+			 
+			 																				// Add four books to the first library
+		 	firstLibrary.addBook(new Book("The Da Vinci Code"));
+			firstLibrary.addBook(new Book("Le Petit Prince"));
+			firstLibrary.addBook(new Book("A Tale of Two Cities"));
+			firstLibrary.addBook(new Book("The Lord of the Rings"));
+																							// Print opening hours and the addresses
+						System.out.println("Library hours:");
+						printOpeningHours();
+						System.out.println();
+						System.out.println("Library addresses:");
+			firstLibrary.printAddress();
+				secondLibrary.printAddress();
+						System.out.println();
+																							// Try to borrow The Lords of the Rings from both libraries
+						System.out.println("Borrowing The Lord of the Rings:");
+			firstLibrary.borrowBook("The Lord of the Rings");
+			firstLibrary.borrowBook("The Lord of the Rings");
+				secondLibrary.borrowBook("The Lord of the Rings");
+						System.out.println();
+																							// Print the titles of all available books from both libraries
+						System.out.println("Books available in the first library:");
+			firstLibrary.printAvailableBooks();
+						System.out.println();
+						System.out.println("Books available in the second library:");
+				secondLibrary.printAvailableBooks();
+						System.out.println();
+																							// Return The Lords of the Rings to the first library
+						System.out.println("Returning The Lord of the Rings:");
+			firstLibrary.returnBook("The Lord of the Rings");
+						System.out.println();
+																							// Print the titles of available from the first library
+						System.out.println("Books available in the first library:");
+			firstLibrary.printAvailableBooks();
+		}
+
+		
+}

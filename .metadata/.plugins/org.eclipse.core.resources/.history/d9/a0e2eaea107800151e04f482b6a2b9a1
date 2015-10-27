@@ -1,0 +1,342 @@
+	import java.util.Scanner;																							//import needs to be outside of the public/private class
+	import java.util.Random; 							//this is used to generate random numbers
+	public class Main 
+{
+	public static void main(String args[])																				//void means no value returned
+	{
+		//***********************************************************************************************************************************************//
+//
+//																														//how to use methods with parameters
+//																														//line below, in between brackets is the argument - 
+						Scanner input = new Scanner(System.in);																//this needs to be called ONLY once in a program 
+//						Hello codObject = new Hello();
+//						System.out.println("Enter your name here: ");
+//						
+//																														//line below takes the user input and stores it as a variable in name
+//						String name = input.nextLine();																	//this is what uses the user text
+//						
+//						
+//																														//below shows how to ask how someone is
+//						codObject.simpleMess(name);
+//						Hello howObject = new Hello();
+//						String how = input.nextLine(); 																	//this is what uses the user text
+//						howObject.simpleHow(how);  																		//this uses the temp input 'how'
+
+		//***********************************************************************************************************************************************//
+//																														/*Dog calls the class type where it will be stored ------- ci is given the temp name by user ------ new dog is used to set new input to class Dog
+//																														below could be written as -----------Dog ci.Object = new Dog();*/
+//						MethodPara ci;
+//						ci = new MethodPara();
+//						System.out.println("Enter name of your dog here: ");
+//																														//below shows how to store tempary data that has been inputed
+//						String temp = input.nextLine();
+//																														//below shows how the MMaI is set to the inputed data
+//						ci.setName(temp);
+//						ci.saying();
+		
+		//***********************************************************************************************************************************************//
+//																														// This part shows a constructor ------ how to initialise a variable as soon as you create an object	
+//						Constructor cathObject = new Constructor("Magners");
+//						Constructor cathObject2= new Constructor("Guiness");
+//						cathObject.saying(); 																			//'saying' is a method
+//						cathObject2.saying();								
+	
+		//***********************************************************************************************************************************************//		
+//																														//this is nested if statement
+//						int age;
+//						
+//						{
+//							System.out.println("Please type in your age ");
+//							age = input.nextInt();																		//this means the number input that the user gives
+//		
+//						}
+//						
+//						if (age < 50) 
+//							{
+//								System.out.println("You are young");
+//							}
+//						else
+//							{
+//								System.out.println("you smell");
+//								if (age > 75)
+//									{
+//										System.out.println("You are REALLY old");
+//									}
+//								else
+//									{
+//									System.out.println("You are not really that old!");
+//									}
+//							}
+//				
+		//***********************************************************************************************************************************************//
+//			{																												// else if statement 
+//							int manage;
+//								
+//							{
+//								System.out.println("Please Enter your age ");
+//								manage = input.nextInt();
+//							}
+//							
+//								if (manage > 70)
+//								
+//												System.out.println("You are a OAP");
+//								
+//								else if (manage >= 50) 
+//								
+//									
+//										System.out.println("You are in your 30s");
+//									else if (manage >= 30)
+//										System.out.println("You are passed 30!");
+//									else if (manage < 30 )
+//										System.out.println("You are young");
+//									else
+//										System.out.println("Say What?");
+//			
+//	
+//			}
+		//***********************************************************************************************************************************************//
+//																															//Conditional Operator 
+//			{
+//							int gage = 21;
+//							
+//							System.out.println(gage > 50 ? "you are old" : "You are under 50");								//the ':' means True or False. the '(age > 50 ?)' - this is if age is more than 50 then true 
+//			}
+//			
+		//***********************************************************************************************************************************************//
+//			{
+//							int total = 0;
+//							int grade;
+//							int average;
+//							int counter = 0;
+//							
+//							
+//							
+//							while (counter < 10)
+//							{
+//								System.out.println("Please type number " + counter);
+//								grade = input.nextInt();																	//this means the number input that the user gives
+//								total = total + grade;
+//								counter++;
+//							}
+//			
+////							average = total/10;
+////							System.out.println("Your average is " + average);
+//			}					
+		//***********************************************************************************************************************************************//
+//																															//For Loops
+//			{																												//1st is where loop starts, 2nd is where to end, 3rd is how much increase 
+//								System.out.println("Numbers up to 10 in steps of 3 ");
+//								for(int counter = 1; counter <= 10; counter += 3)												// ++ adds counter by 1, += adds by following number
+//								System.out.println(counter);
+//			}
+		//***********************************************************************************************************************************************//
+//							//A = P(1 + R)^n																				//Compound Interest Program
+//			{
+//							double amount;
+//							double principle = 10000;
+//							double rate = 0.1;
+//							
+//							System.out.println("working out how many view you'd get at an avarge increase of 1% per day starting at 10000");
+//							
+//							for (int day = 1; day <10; day++)
+//								{
+//									amount = principle * Math.pow(1 + rate, day);											//to the power of you need Math.pow 
+//									System.out.println(day + " " + amount);
+//								}
+//			}		
+			//***********************************************************************************************************************************************//
+//																															//Do While Loop - used to run a program before condition is reached
+//							int counter = 0;
+//			
+//							do
+//							{
+//								System.out.println(counter);
+//								counter++;		
+//							}
+//							while(counter <=10);
+//							
+//			//***********************************************************************************************************************************************//
+//																															//Math Class methods
+//							{
+//								System.out.println("Absolute value of -26.7 is ");
+//								System.out.println(Math.abs(-26.7));														//Math.abs means absolute value that it is from 0, in this case it would be 26 ------- Math.ceil will round it up (ceiling) and Math.floor will round down --------- Math.Max will give max of two different numbers Math.max(8.6, 5.2) will give 8.6 ------- Math.min will do the opposite to max and give 5.2 as the minimum number --------Math.pow(5, 3) means to the power and will give 5*5*5 = 125 will be returned ---------- Math.sqrt means square root so Math.sqrt(9) will give 3    						
+//							}
+//	
+			//***********************************************************************************************************************************************//
+//							//How to get random numbers
+//							System.out.println("The following list is of random numbers ");
+//							Random dice = new Random();
+//							int number;
+//							int user;
+//							
+//							System.out.println("Please add in a number");
+//							user = input.nextInt();
+//							
+//							
+//							for(int count = 1; count <= 10; count ++)
+//							{
+//								number = 1 + dice.nextInt(user);					//6 is replecating each face on a dice ------------ the 6 numbers would be from 0 - 5 ----------- this is why there is a plus 1, so that numbers can only be 1 - 6 
+//								System.out.println("From " + user + " a random number is " + number + " ");
+//							}
+	
+//			//***********************************************************************************************************************************************//
+//							//Trial
+//						{		
+//							int num;
+//							int step = 2015;
+//							int year = 0;
+//							
+//							System.out.println("How many years before 2015 did you start driving?");
+//							
+//							num = input.nextInt();
+//							
+//							
+//							
+//							for(int count = 0; count <= num; count++)
+//								{
+//									
+//									System.out.println("You have been driving " + year + " years in " + step);
+//									year++;
+//									step --;
+//								}
+//						}
+//			//***********************************************************************************************************************************************//					
+//																																//			ARRAYS!!!!!!!!!!!!!!!! ------ NEED TO KNOW
+//																																//arrays can only store same data types, int, double, string etc
+//						{
+//							int bucky[] = new int[10] ;																			//square brackets tell java that this is an array --------- new int [number] the number states size of array
+//							
+//							bucky[0] = 87; 																						//this is the first location given the value 87
+//							bucky[1] = 543;
+//							bucky[2] = 65;
+//							
+//							System.out.println(bucky[1]); 																		//this prints the value shown in the location bucky[1] which should be 543							
+//
+//						}
+//					
+//			//***********************************************************************************************************************************************//
+//																																//ARRAY initialiser -------- this inititalises all your arrays so you do not type in each value
+//						
+//						{
+//							int bucky[] = {2,4,5,6,7,8};																		//quicker way to list an array
+//							
+//							System.out.println(bucky[2]);																		//calls up the array location 2 ---------- location of an array is also called subscript or  index
+//							
+//						}
+//						
+//			//***********************************************************************************************************************************************//
+//																																//Creating a basic Array Table
+//						{
+//							System.out.println("Index\t");																		// this prints out 'index' and '\t' does five spaces
+//							
+//							
+//										//	0,1,2,3, 4, 5,  6, 7,  8, 9,														these area the location numbers 
+//							int bucky[] = { 5,9,5,7,90,123,64,323,77,23 };
+//							int count;
+//							int totalNumber = 0;
+//							
+//							for (count = 0; count <= bucky.length; count++)														//bucky.length is needed to state the array size
+//							{
+//								totalNumber = totalNumber + bucky.length;
+//								System.out.println(count + "\t" + bucky[count]);
+//							}
+//						}
+//
+			//***********************************************************************************************************************************************//
+																																//Summing Arrays
+						{
+							int plucky[] = { 21, 65, 42, 76, 44, 23, 35, 77, 11 ,21};
+							int sum = 0;
+							int count;
+							
+							
+							for (count = 0; count <= plucky.length; count++)
+							{
+								sum = sum + plucky[count];																		//this adds the value in the array to sum
+								System.out.print("the sum so far is \t" + sum + " of " + plucky[count] + "\n");
+							}
+														
+						}
+						
+						//***********************************************************************************************************************************************//
+										//Array Elements as counters
+						{
+							
+						}
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+						//***********************************************************************************************************************************************//
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			//***********************************************************************************************************************************************//
+	}
+}

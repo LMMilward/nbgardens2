@@ -1,0 +1,16 @@
+
+public class NBGardens
+{
+	public static void main(String args[])
+	{
+		
+		CustomerOrder order1 = new CustomerOrder();
+		order1.orderID = 1;
+		System.out.println(order1.orderID);
+		
+		
+	}
+	
+}
+
+

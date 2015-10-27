@@ -1,0 +1,61 @@
+
+public class TimeClass 
+{
+		private int hour;
+		private int minute;
+		private int second;
+		
+		//***********************************************************************************************************************************************//
+//		
+//		public void setTime(int h, int m, int s)			// user will input numbers
+//		{
+//			hour = ((h >= 0 && h<24) ? h : 0);				// this allows on 0-24 hours to be inputed
+//			minute = ((m >= 0 && m <60) ? m : 0);
+//			second = ((s >= 0 && s < 60) ? s : 0);			// '?' means if not then set to 	
+//		
+//		}
+//		
+//		public String toMilitary()		//toMilitary is the method called
+//		{
+//			return String.format("%02d:%02d:%02d", hour, minute, second); //%02d: means display whatever is placed outside of the ""
+//			
+//		}
+//		
+//		public String toNormal()
+//		{																//'?12' means set hour to 12 ----- ':hour%12' means divide by 12 and use remainder  
+//			return String.format("%d:%02d:%0d %s", ((hour == 0||hour ==12)?12:hour%12), minute, second, (hour <12? "AM": "PM"));
+//			
+//		}
+//	
+			//***********************************************************************************************************************************************//
+												// this is for multiple constructors
+				public TimeClass()
+				{
+					this (0,0,0);
+				}
+				public TimeClass(int h)
+				{
+					this (h,0,0);
+				}
+				public TimeClass(int h, int m)
+				{
+					this (h,m,0);
+				}
+				public TimeClass(int h, int m, int s)
+				{
+					setTime(h,m,s);
+				}
+				public void setTime(int h, int m, int s)
+				{
+					setHour(h);
+					setMinute(m);
+					setSecond(s);
+				}
+	
+	
+			//***********************************************************************************************************************************************//
+	
+	
+	
+	
+}

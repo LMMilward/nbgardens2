@@ -1,0 +1,18 @@
+
+//import used so user can input information
+import java.util.Scanner;
+
+public class apples 
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		ManyMethodsandInstances ManyMethodsandInstances.Object = new ManyMethodsandInstances();
+		System.out.println("Enter name of your dog here: ");
+		//below shows how to store tempary data that has been inputed
+		String temp = input.nextLine();
+		//below shows how the MMaI is set to the inputed data
+		ManyMethodsandInstances.setName(temp);
+	}
+}
+

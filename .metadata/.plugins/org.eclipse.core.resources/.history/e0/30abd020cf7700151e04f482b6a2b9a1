@@ -1,0 +1,12 @@
+public class CustomerID 
+{
+	Boolean porousyes;
+	Boolean porousno;
+	double payment;
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,92 @@
+//http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-092-introduction-to-programming-in-java-january-iap-2010/assignments/MIT6_092IAP10_assn04.pdf
+//https://www.youtube.com/watch?v=XYcz9QSprY4
+//http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-092-introduction-to-programming-in-java-january-iap-2010/assignments/
+//https://www.youtube.com/watch?v=l0N6WvIVoUI&list=PLFE2CE09D83EE3E28&index=42
+
+
+public class Library 
+{
+		String address;
+		String openingHours;
+		Book[] books;
+	
+		public Library(String address)
+		{
+			this.address = address;
+			openingHours = "9AM to 5PM";
+		}
+		public void printAddress() //void because it's not returning anything
+		{
+			System.out.println(address);
+		}
+		
+		public void borrowBook(String bookTitle) // void because it's not returning anything ----- Declare string because bookTitle will be called
+		{
+			for (i =0; i< arrBooks.length; i++)
+			{
+				
+			}
+		}
+		
+		public static void printOpeningHours() 
+		{
+			
+			//System.out.println("The opening Times are 9AM and 5PM ");
+		}
+		private void addBook(Book book) 
+		{
+			System.out.printf("The two Librarys are %s & &s /n", getLib(), getLib());
+			
+		}
+
+		//******************** THIS IS WHERE secondLibrary WILL BE ****************************************//
+	
+	
+	
+	
+	
+	
+	
+	// Add the missing implementation to this class
+	public static void main(String[] args) 
+		{
+																							// Create two libraries
+			 Library firstLibrary = new Library("10 Main St.");
+			 Library secondLibrary = new Library("228 Liberty St.");
+			 																				// Add four books to the first library
+		 	firstLibrary.addBook(new Book("The Da Vinci Code"));
+//			firstLibrary.addBook(new Book("Le Petit Prince"));
+//			firstLibrary.addBook(new Book("A Tale of Two Cities"));
+//			firstLibrary.addBook(new Book("The Lord of the Rings"));
+																							// Print opening hours and the addresses
+						System.out.println("Library hours:");
+						printOpeningHours();
+						System.out.println();
+//						System.out.println("Library addresses:");
+//			firstLibrary.printAddress();
+//				secondLibrary.printAddress();
+//						System.out.println();
+//																							// Try to borrow The Lords of the Rings from both libraries
+//						System.out.println("Borrowing The Lord of the Rings:");
+//			firstLibrary.borrowBook("The Lord of the Rings");
+//			firstLibrary.borrowBook("The Lord of the Rings");
+//				secondLibrary.borrowBook("The Lord of the Rings");
+//						System.out.println();
+//																							// Print the titles of all available books from both libraries
+//						System.out.println("Books available in the first library:");
+//			firstLibrary.printAvailableBooks();
+//						System.out.println();
+//						System.out.println("Books available in the second library:");
+//				secondLibrary.printAvailableBooks();
+//						System.out.println();
+//																							// Return The Lords of the Rings to the first library
+//						System.out.println("Returning The Lord of the Rings:");
+//			firstLibrary.returnBook("The Lord of the Rings");
+//						System.out.println();
+//																							// Print the titles of available from the first library
+//						System.out.println("Books available in the first library:");
+//			firstLibrary.printAvailableBooks();
+		}
+
+		
+}

@@ -1,0 +1,77 @@
+
+public class TimeClass 
+{
+		private int hour;
+		private int minute;
+		private int second;
+		
+		//***********************************************************************************************************************************************//
+//		
+//		public void setTime(int h, int m, int s)			// user will input numbers
+//		{
+//			hour = ((h >= 0 && h<24) ? h : 0);				// this allows on 0-24 hours to be inputed
+//			minute = ((m >= 0 && m <60) ? m : 0);
+//			second = ((s >= 0 && s < 60) ? s : 0);			// '?' means if not then set to 	
+//		
+//		}
+//		
+//		public String toMilitary()		//toMilitary is the method called
+//		{
+//			return String.format("%02d:%02d:%02d", hour, minute, second); //%02d: means display whatever is placed outside of the ""
+//			
+//		}
+//		
+//		public String toNormal()
+//		{																//'?12' means set hour to 12 ----- ':hour%12' means divide by 12 and use remainder  
+//			return String.format("%d:%02d:%0d %s", ((hour == 0||hour ==12)?12:hour%12), minute, second, (hour <12? "AM": "PM"));
+//			
+//		}
+//	
+			//***********************************************************************************************************************************************//
+												// this is for multiple constructors ------ SETTERS AND GETTERS Starting
+																			// three arguments Hour, Minute and Seconds
+				public TimeClass()
+				{
+					this (0,0,0);											// this sets all to 0 if nothing stated
+				}
+				public TimeClass(int h)										// if they pass one number which is an hour it will be displayed and the others will be 0 
+				{
+					this (h,0,0);
+				}
+				public TimeClass(int h, int m)
+				{
+					this (h,m,0);											// hour and minute will be given a value but not second
+				}
+				public TimeClass(int h, int m, int s)
+				{
+					setTime(h,m,s);											// all are given values 
+				}
+				public void setTime(int h, int m, int s)					//this is what we will use to call the methods to set hour, minute and second
+				{
+					setHour(h);
+					setMinute(m);
+					setSecond(s);
+				}
+				
+				public void setHour(int h)
+				{										
+					hour = ((h >= 0 && h < 2)? h:0);						//this checks if hour is more than or equal to zero and less than 24. if not then set it to 0
+				
+				}
+				
+				public void setMinute(int m)
+				{
+					minute = ((m >= 0 && m < 60)? m:0); 					//this checks if minute is more than or equal to zero and less than 60 else it is set to 0
+				}
+				public void setSecond(int s)
+				{
+					second = ((s >=0 && s <60)? s:0);						//this checks if second is more than or equal to 0 and if it less than 60 else it is set t  0
+				}
+				
+	
+			//***********************************************************************************************************************************************//
+	
+	
+	
+	
+}

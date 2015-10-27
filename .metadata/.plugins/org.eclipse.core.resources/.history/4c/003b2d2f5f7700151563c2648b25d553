@@ -1,0 +1,45 @@
+
+public class CustomerOrder 
+{	
+	int CustomerID;
+	int OrderID;
+	int ProductID;
+	String OrderStatus;
+	
+		public static void main(String[] args)
+				{
+					System.out.println("Would a customer like to place an order?\n\n");
+				}
+
+
+
+
+
+
+
+
+}
+	
+	
+	
+	
+		
+	
+	// A very bare bones example of how to populate a list 
+
+//	public List<Customer> returnAllOrders() 
+//	{
+
+//		ArrayList<Customer> listOfOrders = new ArrayList<Customer>();
+		
+		// Access database
+		
+//		FOR EACH LINE IN RESULT SET 
+
+//		{
+//			Customer cust = new Customer(ResultSet.Name, ResultSet.Age);
+//			listOfOrders.add(cust);
+//		}
+		
+//		return listOfOrders;
+//	}

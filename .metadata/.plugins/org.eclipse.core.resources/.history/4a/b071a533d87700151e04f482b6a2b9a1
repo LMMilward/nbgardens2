@@ -1,0 +1,36 @@
+
+public class NBGardens
+{
+	public static void main(String args[])
+	{
+		
+		int employee, notemployee;
+		employee = 1;
+				
+		notemployee = 0;
+		
+		if(employee == 1)
+		{
+			System.out.println("What would you like to do?");
+		}
+		else
+		{
+			System.out.println("You must be an employee. Goodbye!!");
+		}
+		
+		
+		
+		
+		CustomerOrder order1 = new CustomerOrder();
+		order1.setOrderID(1);
+		System.out.println(order1.getOrderID());
+		order1.setOrderStatus("complete");
+	
+		//error due to order1ID being set and not used
+		int order1ID = order1.getOrderID();
+		
+	}
+	
+}
+
+

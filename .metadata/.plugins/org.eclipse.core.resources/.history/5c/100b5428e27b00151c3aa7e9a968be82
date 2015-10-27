@@ -1,0 +1,278 @@
+		//*********************THIS IS FOR POPUPS*************************************************************************************************************************
+			import javax.swing.JOptionPane;
+		//********************THIS IS FOR INPUTITNG USER AND ARRAY************************************************************************************************************
+			import java.util.ArrayList;
+			import java.util.Scanner;	
+	public class NBGardens
+{	
+		//************************** THE START OF THE MAIN ****************************************************************************************************************************
+	public static void main(String args[])
+		{
+		//******************************* ARRAY LISTS *********************************************************************************************************************************
+			ArrayList<CustomerOrder> arrayCustomerOrder = new ArrayList<CustomerOrder>();
+			arrayCustomerOrder.add(new CustomerOrder(1,"Gnome",1, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(2,"One Direction Gnome",2, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(3,"Fishing Gnome", 3, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(4,"Fishing Gnome", 3, "completed"));
+			arrayCustomerOrder.add(new CustomerOrder(5,"Fishing Gnome", 3, "completed"));
+			arrayCustomerOrder.add(new CustomerOrder(6,"Fishing Gnome", 3, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(7,"Fishing Gnome", 3, "completed"));
+			arrayCustomerOrder.add(new CustomerOrder(8,"Fishing Gnome", 3, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(9,"Fishing Gnome", 3, "completed"));
+			arrayCustomerOrder.add(new CustomerOrder(10,"Fishing Gnome", 3, "started"));
+			arrayCustomerOrder.add(new CustomerOrder(11,"Fishing Gnome", 3, "completed"));
+			arrayCustomerOrder.add(new CustomerOrder(12,"Fishing Gnome", 3, "completed"));
+			
+			ArrayList<StockWarehouse>  arrayStockWarehouse = new ArrayList<StockWarehouse>();
+			arrayStockWarehouse.add(new StockWarehouse(1, "Gnome", 1, 2));
+			arrayStockWarehouse.add(new StockWarehouse(2, "Luke Gnome", 1, 2));
+			arrayStockWarehouse.add(new StockWarehouse(3, "Fishing Gnome", 2, 2));
+			arrayStockWarehouse.add(new StockWarehouse(4, "Gnome Hat", 3, 2));
+			arrayStockWarehouse.add(new StockWarehouse(5, "Gnome Head", 4, 2));
+			arrayStockWarehouse.add(new StockWarehouse(6, "Deamon Gnome", 5, 2));
+			arrayStockWarehouse.add(new StockWarehouse(7, "Mining Gnome", 6, 2));
+			arrayStockWarehouse.add(new StockWarehouse(8, "Smithy Gnome", 6, 2));
+			arrayStockWarehouse.add(new StockWarehouse(9, "Butcher Gnome", 5, 2));
+			arrayStockWarehouse.add(new StockWarehouse(10, "Ginger Gnome", 8, 2));
+			arrayStockWarehouse.add(new StockWarehouse(11, "Welsh Gnome", 4, 2));
+			arrayStockWarehouse.add(new StockWarehouse(12, "Saes Gnome", 5, 2));
+			arrayStockWarehouse.add(new StockWarehouse(13, "Giant Gnome", 8, 2));
+			arrayStockWarehouse.add(new StockWarehouse(14, "Fat Gnome", 8, 2));
+			arrayStockWarehouse.add(new StockWarehouse(15, "Baby Gnome", 9, 2));
+			
+			ArrayList<OrderLine> arrayOrderLine = new ArrayList<OrderLine>();
+			arrayOrderLine.add(new OrderLine(001,1, 10, 3));
+			arrayOrderLine.add(new OrderLine(001,2, 10, 2));
+			arrayOrderLine.add(new OrderLine(001,5, 10, 1));
+			arrayOrderLine.add(new OrderLine(002,3, 10, 8));
+			arrayOrderLine.add(new OrderLine(002,5, 10, 9));
+			arrayOrderLine.add(new OrderLine(002,4, 10, 8));
+			arrayOrderLine.add(new OrderLine(003,5, 10, 4));
+			arrayOrderLine.add(new OrderLine(004,9, 10, 5));
+			arrayOrderLine.add(new OrderLine(005,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(005,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(006,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(007,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(007,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(007,9, 10, 1));
+			arrayOrderLine.add(new OrderLine(007,9, 10, 1));
+			
+		//************************* SETTING A NEW SCANNER AND NEW ARRAY LIST **********************************************************************************************************
+			for(CustomerOrder c:  arrayCustomerOrder)
+			{
+				System.out.printf("%2s\n", c);
+			}
+			Scanner input = new Scanner(System.in);	
+//			ArrayList<String> gnomeList = new ArrayList<String>();	
+			
+		//************************* CASES WILL ALLOW USER TO MAKE A DECISION **********************************************************************************************************			
+			while(true)
+			{
+			System.out.println("**************************Main Menu*************************\nWhat would you like to do? \n\n 1 - Orders \n 2 - Warehouse \n ");
+			
+			int choice = input.nextInt();
+		
+			switch (choice)
+			{
+		//***************************************************** ARRAY LIST ************************************************************************************************
+				case 1:
+						System.out.println("\nWhat would you like to do?");
+						System.out.println("\n 1 - Check Orders \n 2 - Print Orders \n 3 - Orders that require PorousWare \n 4 - Update Order\n");
+						int choice1 = input.nextInt();
+
+						switch (choice1)
+						{
+		//*********************************************** CHECK ORDER LIST ************************************************************************************************					
+							case 1: 
+									System.out.println("You have selected Check Orders \n\n");
+									System.out.println("\n\nOrderNumber\t ProductID\t Quantity\t PorousRequested\n*******************************************************************");
+									
+									for(OrderLine l:  arrayOrderLine)
+									{
+										System.out.printf("%s\n", l);
+									}
+									
+										System.out.println("Move Back To Menu?");
+										int choice2 = input.nextInt();
+										if(choice2 == 1)
+											{
+											}
+//									if (choice2 == 1)
+//									{
+//										String gnome = input.next();
+//										int productNumber = 0;
+//										gnomeList.add(productNumber, gnome);
+//										productNumber = productNumber++;
+//										System.out.println(gnome + " has been added to the order database!" + gnomeList + "\n");
+//										System.out.println("\nWould you like to add another order?\n\n");			
+//									}
+							break;	
+		//************************************************ PRINTING ORDERS ************************************************************************************************				
+							case 2:	
+//NOT PRINTING OUT RIGHT				
+								for(CustomerOrder d:  arrayCustomerOrder)
+										{
+											System.out.printf("%5s\n", d);	
+										}
+								
+										System.out.println("Move back to menu?");
+								
+										int choice3 = input.nextInt();										
+										if(choice3 == 1)
+										{
+										}
+										
+//										if(choice3 == 1)
+//										{
+//											OrderLine printOList = new OrderLine("Nick's Order");
+//											OrderLine printOList2 = new OrderLine("Jame's Order");
+//											OrderLine printOList3 = new OrderLine("Lee's Order");
+//											printOList.printOrdersList();
+//											printOList2.printOrdersList();
+//											printOList3.printOrdersList();
+//										}
+							break;
+		//***************************************************** POROUS WARE ************************************************************************************************			
+							case 3:
+									System.out.println("You have selected PorousWare");
+										System.out.println("ProductId \t Porous Requested\n *****************************************");
+									for(int k = 0; k < arrayOrderLine.size(); k++)
+										{
+											
+											System.out.println("   " + arrayOrderLine.get(k).getproductID() + "\t\t\t" + arrayOrderLine.get(k).getporousWare());
+										}
+									
+									System.out.println("Move back to menu?");
+									
+									int choice4 = input.nextInt();						
+									if(choice4 == 1)
+									{
+									}
+							break;
+		//***************************************************** UPDATE ORDER ************************************************************************************************							
+							case 4:		
+									System.out.println("You have selected to Update an Order");
+									int choice4b = input.nextInt(); 
+									
+									if(choice4b < arrayOrderLine.size())
+									{
+										for(int k = 0; k < arrayOrderLine.size(); k++)
+										{
+											System.out.println("Which order status would you like to change?");	
+											String Order = input.nextLine();
+											
+											
+											String updateOrder;
+											String oldStatus = arrayOrderLine.(updateOrder); 
+											
+											OrderStatus == updateOrder;
+											if(arrayCustomerOrder.get(choice4b).getOrderStatus() == choice4b);
+											{
+												
+											}
+										}
+										System.out.printf("Order changed from %s to %s", oldStatus, OrderStatus);
+										System.out.printf("%s\n",arrayOrderLine.get(choice4b));	
+									}
+									
+							break;
+		//*********************************************************************************************************************************
+							default:
+								
+							return;
+						}
+				break;
+		//************************************************** END OF CASE 1 ***********************************************************************************************		
+				case 2: 
+						System.out.println("\n What would you like to do?\n");
+						System.out.println(" 1 - Select An Order \n 2 - Update Inventory System \n 3 - Remove Product From Sale \n 4 - Stock Delivery \n 5 - Product Location \n 6 - Porous Ware Required List \n");
+						int choice2a = input.nextInt();
+						
+						
+						switch (choice2a)
+						{
+		//************************************************** SELECT ORDER **********************************************************************************************
+						case 1:
+							
+								System.out.println("Which order would you like to select?\n");
+								int choice2b = input.nextInt();
+								if(choice2b < arrayOrderLine.size())
+								{
+									for(int k = 0; k < arrayOrderLine.size(); k++)
+									{
+										if(arrayOrderLine.get(choice2b).getcustomerOrderID() == choice2b);
+										{
+											
+										}
+									}
+									System.out.println("OrderID\t ProductID\t Quantity\t PorousReq\n**********************************************************************************************");
+									System.out.printf("%s\n",arrayOrderLine.get(choice2b));	
+								}
+								else
+								{
+									System.out.println("Not an Order Number\n\n");
+								}
+									
+								System.out.println("Move Back To Menu?");
+								int choice3b = input.nextInt();
+								if(choice3b == 1)
+								{
+								}
+								
+						break;
+		//************************************************** STOCK ORDERS ***********************************************************************************************						
+						case 2:
+								
+								System.out.println("Which stock levels would you like to ammend?\n");
+								for(StockWarehouse e:  arrayStockWarehouse)
+								{
+									System.out.printf("%s\n", e);
+								}
+								System.out.println("Move Back To Menu?");								
+								int choice2c = input.nextInt();
+								if(choice2c == 1)
+								{
+								}
+						break;
+		//************************************************** REMOVE PRODUCT ***********************************************************************************************					
+						case 3:
+								System.out.println("What product would you like to remove from sale?\n");
+						break;
+		//************************************************** ORDER STATUS ***********************************************************************************************					
+						case 4:
+								System.out.println("What status would you like to ammend?\n");
+						break;
+		//************************************************** ITEM LOCATION ***********************************************************************************************						
+						case 5:
+								System.out.println("Which item would you like to locate?\n");
+						break;
+		//************************************************** POROUSWARE REQUESTED ***********************************************************************************************							
+						case 6:
+								System.out.println("The items below show which orders require PorousWare:\n");
+						break;
+		//************************************************** END OF CASE 6 ***********************************************************************************************							
+						default:
+		//************************************************** END OF CASE 1 ***********************************************************************************************							
+						break;
+		//************************************************** END OF CASE 1 ***********************************************************************************************						
+						}
+				break;
+		//************************************************* END OF CASE 2 ************************************************************************************************			
+				default:
+					
+				return;
+			}	
+		//************************************************ END OF DEFAULT CASE *******************************************************************************************
+			}
+		}
+}
+	//************************************************************* THE END **********************************************************************************************
+		
+	/*	CustomerOrder order1 = new CustomerOrder();
+		order1.setOrderID(1);
+		System.out.println(order1.getOrderID());
+		order1.setOrderStatus("complete");
+	
+		//error due to order1ID being set and not used
+		int order1ID = order1.getOrderID();
+		*/

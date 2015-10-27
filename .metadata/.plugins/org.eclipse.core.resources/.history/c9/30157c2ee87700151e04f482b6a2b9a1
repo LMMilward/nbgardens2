@@ -1,0 +1,27 @@
+
+//import used so user can input information
+import java.util.Scanner;
+
+public class apples 
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		/*below could be written as 
+		Dog calls the class type where it will be stored 
+		ci is given the temp name by user
+		new dog is used to 
+		
+		*/
+		Dog ci;
+		ci = new Dog();
+		System.out.println("Enter name of your dog here: ");
+		//below shows how to store tempary data that has been inputed
+		String temp = input.nextLine();
+		//below shows how the MMaI is set to the inputed data
+		ci.setName(temp);
+		ci.saying();
+		}
+}
+

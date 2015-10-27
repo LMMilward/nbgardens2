@@ -1,0 +1,10 @@
+
+public class OrderLine 
+{
+	int CustomerOrderID;
+	int CustomerID;
+	int EmployeeID;
+	int ProductID;
+	
+	
+}

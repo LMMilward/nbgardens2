@@ -1,0 +1,65 @@
+////				
+//
+//												to call an array
+//												basic = array1[counter][0]
+//												if one array
+//**************************************************************************************************
+//								This is in the main 
+
+	import java.util.Scanner;																							//import needs to be outside of the public/private class
+	import java.util.Random; 							//this is used to generate random numbers
+{
+
+
+
+public class Arrays {
+
+
+								double hours;
+								double hours2;
+								double basePay;
+								double extraPay;
+								double pay;		
+							
+								double array1[][] = {{7.50,35.00}};
+								double array2[][] = {{8.2, 47}};
+								double array3[][] = {{10, 73}};
+								
+
+								
+							
+								System.out.print("Employee1 \t");
+								display(array1); 
+								
+								System.out.print("\nEmployee2 \t");
+								display(array2);
+								
+								System.out.print("\nEmployee3 \t");
+								display(array3);
+
+}
+
+}
+//   ***********************************************************************************************************
+						//	This must be outside the main
+
+
+
+
+					public static void display(double x[][])
+					{
+						for (int row = 0; row < x.length; row++)
+							{
+									for(int column = 0; column < x[row].length; column++)
+										{
+											System.out.print(x[row][column]);
+											System.out.print("\t");
+										}
+									
+									
+						
+							}
+					}
+					}
+					
+	

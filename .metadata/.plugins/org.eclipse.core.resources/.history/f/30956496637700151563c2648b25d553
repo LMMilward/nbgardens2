@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class CustomerOrder 
+{	
+	int orderID;
+	String orderStatus;
+	ArrayList<OrderLine> orderLines = new ArrayList<OrderLine>();
+	
+	
+
+
+}
+	

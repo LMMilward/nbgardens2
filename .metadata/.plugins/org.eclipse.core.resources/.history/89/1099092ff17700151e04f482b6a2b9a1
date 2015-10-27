@@ -1,0 +1,24 @@
+
+public class Cat 
+{
+	private String catName;
+	
+	public  Cat(String name) //this is the constructor method
+	{
+		catName = name;		//this takes value from main and places it as the catname 
+	}
+	
+	public void setName(String name)														//void means nothing is returned
+		{
+		catName = name;
+		}
+	public String getName()
+	{
+		return catName;
+	}
+
+	public void saying()
+	{
+		System.out.printf("Your cat's name was %s\n ", getName());
+	}
+}

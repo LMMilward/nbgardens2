@@ -1,0 +1,13 @@
+
+public class OrderLine 
+{
+	int CustomerOrderID;
+	int ProductID;
+	int Quantity; 
+	static String printOrders;
+	
+	public static void printOrdersList()
+	{
+		System.out.println(printOrders);
+	}
+}
